@@ -1,17 +1,21 @@
 export const updateRiders = async () => {
 
-    const body = JSON.parse(localStorage.getItem('riders'));
+    const body = JSON.stringify(localStorage.getItem('riders'));
+    console.log(localStorage.getItem('riders'));
+    console.log('body')
+    console.log(body)
 
-    const url = 'https://api.jsonbin.io/v3/b/6135c3be470d332594032ef7';
+    // const url = 'https://api.jsonbin.io/v3/b/6135c3be470d332594032ef7';
+    const url = 'https://api.jsonbin.io/v3/b/6137131b85791e1732a1200a';
     const request = await fetch( url, {
         method: 'PUT' ,
         headers: { 
             'Content-type': 'application/json',
-            'X-Master-Key': '$2b$10$1iLRVqXVnu6JB9cLVTnR5uhuWZVaMB0a3xsE96k2p5VUR1Kbm46Ju'
+            'X-Master-Key': '$2b$10$nnuSg9tFuinZo/CM8ap4vep/s6l5iQkZwE2JkRHpQaVMGEHdmEqC2'
         },
-        body: JSON.stringify( body )
+        body: body
     })
-        // .then( (response) => console.log(response));
+        .then( (response) => console.log(response));
 
         return request;
 
