@@ -1,9 +1,6 @@
 export const updateRiders = async () => {
 
     const body = JSON.stringify(localStorage.getItem('riders'));
-    console.log(localStorage.getItem('riders'));
-    console.log('body')
-    console.log(body)
 
     // const url = 'https://api.jsonbin.io/v3/b/6135c3be470d332594032ef7';
     const url = 'https://api.jsonbin.io/v3/b/6137131b85791e1732a1200a';
