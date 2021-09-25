@@ -8,7 +8,7 @@
     "static/js/2.c713ba1d.chunk.js.map": "/static/js/2.c713ba1d.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.c713ba1d.chunk.js.LICENSE.txt": "/static/js/2.c713ba1d.chunk.js.LICENSE.txt",
-    "static/media/reserva.3fb678c1.png": "/static/media/reserva.3fb678c1.png"
+    "static/media/reserva.3fb678c1.png": "./static/media/reserva.3fb678c1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4789c254.js",
