@@ -34,36 +34,38 @@ export const Grid = ({ pressed, setPressed }) => {
             </div>
             :
             // sino mostramos riders
-            (
-                <table className="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Horas</th>
-                        <th scope="col">Free Riders</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Reservar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        
-                           Object.keys(record).map( i => (
-                                <GridRow 
-                                    id={ record[i].id }
-                                    key={ record[i].id }
-                                    hora={ record[i].Hora }
-                                    ridersAvailable={ record[i].Riders }
-                                    pressed={ pressed }
-                                    setPressed={ setPressed }
-                                    record={ record }
-                                    getRiders={ getRiders }
-                                />
-                                ))
-                                
-                    }
-                </tbody>
-            </table>
-
+            (   
+                <>
+                    <table className="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Horas</th>
+                            <th scope="col">Free Riders</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Reservar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            
+                            Object.keys(record).map( i => (
+                                    <GridRow 
+                                        id={ record[i].id }
+                                        key={ record[i].id }
+                                        hora={ record[i].Hora }
+                                        ridersAvailable={ record[i].Riders }
+                                        pressed={ pressed }
+                                        setPressed={ setPressed }
+                                        record={ record }
+                                        getRiders={ getRiders }
+                                    />
+                                    ))
+                                    
+                        }
+                    </tbody>
+                </table>
+                <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            </>
             )
 
     )
