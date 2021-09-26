@@ -11,7 +11,7 @@ export const ReserveButton = ({ buttonToChange, clicked, id, riders }) => {
                 }}
                 disabled={ riders === 0 && clicked === false ? true : false }
             >
-                <img src="/images/reserva.png" alt="Reservar" width="20"/>
+                <img src="./images/reserva.png" alt="Reservar" width="20"/>
             </button>
         </td>
     )
